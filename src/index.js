@@ -1,16 +1,17 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { RouterProvider } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import router from './router/router';
-import './assests/index.css';
+import './index.css';
+import App from './App';
 import store from './redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
+  <Router>
     <Provider store={store}>
-      <RouterProvider router={router} />
+      <App />
     </Provider>
-  </>,
+  </Router>,
 );
