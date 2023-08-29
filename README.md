@@ -1,202 +1,173 @@
-
-# 📗 Table of Contents
-
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
-
-
-#Math-maigicians
-
-Create with the aim of mentioning one of the thematics of events that I like the most that is that of the video games and using all my knowledge in the right from the first module of the program microverse to give it form and functionality. 
-
-Will have future changes in the next days! 
+<h1>Space Traveler's Hub</h1>
 
 <a name="readme-top"></a>
 
+<!-- TABLE OF CONTENTS -->
 
-<div align="center">
+# 📗 Table of Contents
 
-  <h3 id="title"><b>Math-magicians</b></h3>
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 space-travelers-capstone](#-space-travelers-capstone)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Author ](#-author-)
+  - [🔭 Future Features ](#-future-features-)
+  - [Walkthrough ](#walkthrough-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
-</div>
+<!-- PROJECT DESCRIPTION -->
 
-# 📖 Web page for Calculator <a name="about-project"></a>
-> Math magicians
-> This is the second project of the react series im cirruntly in the aim is to use the elements of the react framework to develop a bookstore
+# 📖 Space Traveler's Hub<a name="about-project"></a>
 
+The space-travelers-group-project is a Web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.
 
-# 📖Description <a name="about-project"></a>
-> this is a bookstore amde with react
 
 ## 🛠 Built With <a name="built-with"></a>
 
--REACT
-
 ### Tech Stack <a name="tech-stack"></a>
+
+- HTML
+- JS
+- CSS
+- React
+- Redux Toolkit (RTK)
 
 <details>
   <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">HTML</a></li>
-    <li><a href="https://reactjs.org/">CSS</a></li>
-    <li><a href="https://reactjs.org/">JS(react)</a></li>
-  </ul>
+  - HTML<br>
+  - JS<br>
+  - CSS<br>
+  - React
 </details>
-
-
 
 ### Key Features <a name="key-features"></a>
 
-1 Add HTML <br>
-3 Add JS<br> 
-4 add linters<br>
+- **Space Travelers Capstone using React**
+- **Client-side routing using React Router V6**
+- **Gitflow is used correctly**
+- **Work is documented in a professional manner**
+- **Following best practices for HTML, CSS, JS**
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+ You can see the live demo of this project: [Comming Soon]()
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> This is the first step in the creation of my project so there is not much yet, but it will grow!
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-1 Web browser <br>
-2 Code editor   <br>
-3 git-github<br>
+- A web browser
+- A code editor
+- A terminal
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-Use these commands: 
-
 ```sh
-  cd my-folder
-  git clone https://github.com/stino-x/Math-MAgicians--Microverse
+  git clone https://github.com/stino-x/Space-Travellers.git
 ```
---->
 
 ### Install
 
 Install this project with:
 
-
-Run command:
-
 ```sh
-  cd my-project
+  cd space-travelers-capstone
   npm install
-  mpn create-my app react
 ```
---->
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project on the webpack dev server, execute the following command:
 
-npm start
+```sh
+  npm start
+```
 
 ### Run tests
 
-Work in progress.
+To run tests, run the following command:
+
+
+```sh
+  npm test
+```
 
 ### Deployment
 
-I use Github pages for the deployment of this web page.
+```sh
+  npm run deploy
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- AUTHORS -->
 
+## 👥 Author <a name="authors"></a>
 
-## 👥 Authors <a name="authors"></a>
+👤 **Juan Diego Guerra (JD)**
+
+- GitHub: [@JuanDiegoGuerra](https://github.com/JuanDiegoGuerra)
+- LinkedIn: [Juan Guerra](https://www.linkedin.com/in/juan-guerra-65076b1ba/)
 
 👤 **Iheagwara Augustine**
 
 - GitHub: [@githubhandle](https://github.com/stino-x)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/augustine-iheagwara-644b11228/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] More designs and styles!
-- [ ] Better funcionality.
-- [ ] Javascript format
+- Add dragons Section
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome! Will help me a lot to improve my coding skills.
-
-Feel free to check the [issues page](../../issues/).
+Contributions, issues, and feature requests are welcome!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
-If you like this project just keep an eye on the changes that I will bring over time, having an audience on this journey is enough support!
+If you like this project, give it a ⭐️!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to my family and God for the opportunities to always improve despite adversity, my girlfriend and friends for being there for me, and Microverse for providing a platform to achieve this goal. 
-
-There were only a few changes in content and styles from the original design
+I would like to thank my coding partner for putting a lot of effort building this project with me!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-## ❓ FAQ <a name="faq"></a>
-
-
-- Will you leave the repo open forever?
-
-  - Yes! until Github ceases to exist.
-
-- Do I need permission from you to use this repo?
-
-  - No, it is completely free for everyone who wants to use it.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/stino-x/check-list/blob/main/LICENSE) licensed.
-
-
-
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
