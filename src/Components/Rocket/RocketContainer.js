@@ -1,30 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { Container } from 'react-bootstrap';
 import RocketList from './RocketList';
-import rocket from './rocket.jpg';
+import { fetchRocketsData } from '../../redux/rocket/rocketSlice';
 import './Rocket.css';
 
 const RocketContainer = () => {
-  const [rockets] = useState([
-    {
-      id: 1,
-      name: 'Falcon 1',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-      images: rocket,
-    },
-    {
-      id: 2,
-      name: 'Falcon 2',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-      images: rocket,
-    },
-    {
-      id: 3,
-      name: 'Falcon 3',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-      images: rocket,
-    },
-  ]);
+  const rockets = useSelector((state) => state.rocket);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchRocketsData());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <Container>
