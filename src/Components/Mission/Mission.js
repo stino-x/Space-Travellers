@@ -1,196 +1,57 @@
-import React from 'react';
+/* eslint-disable import/extensions */
+import React, { useEffect } from 'react';
 import './Mission.css';
-// eslint-disable-next-line import/no-extraneous-dependencies
+import { useDispatch, useSelector } from 'react-redux';
 import Table from 'react-bootstrap/Table';
+import { changeStatus, fetchMission } from './redux/mission/missionSlice';
+// import { fetchMission, changeStatus } from './redux/mission/missionSlice';
+// eslint-disable-next-line import/no-extraneous-dependencies
+// C:\Users\Danskids\Desktop\ALL MY PROJECTS\Space travellers(group-projectreact)
+// \Space-Travellers\src\redux\mission\missionSlice.js
+const Mission = () => {
+  const dispatch = useDispatch();
 
-const Mission = () => (
-  <Table className="table" striped bordered hover variant="light">
-    <thead>
-      <tr>
-        <th className="Column 1">Column 1</th>
-        <th className="Column-2">Column-2</th>
-        <th className="Column 3">Column 3</th>
-        <th className="Column 4">Column 4</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Row 1, Column 1</td>
-        <td className="Column-2">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-            obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-            tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
-            sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-            recusandae alias error harum maxime adipisci amet laborum. Perspiciatis
-          </p>
-          {' '}
+  const missionLog = useSelector((state) => state.missions.missions);
 
-        </td>
-        <td className="Column-3">
-          <div className="status Active">
-            Active
-          </div>
-        </td>
-        <td className="Column-4">
-          <div className="centered-content">
-            <input type="button" className="leave-mission" value="Mission" />
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>Row-2, Column 1</td>
-        <td className="Column-2">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-            obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-            tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
-            sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-            recusandae alias error harum maxime adipisci amet laborum. Perspiciatis
-          </p>
-          {' '}
+  useEffect(() => {
+    dispatch(fetchMission());
+  }, [dispatch]);
+  return (
+    <Table className="table" striped bordered hover variant="light">
+      <thead>
+        <tr>
+          <th className="Column 1">Column 1</th>
+          <th className="Column-2">Column-2</th>
+          <th className="Column 3">Column 3</th>
+          <th className="Column 4">Column 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        {missionLog.map((mission) => (
+          <tr key={mission.mission_id}>
+            <td className="Column-1">{mission.mission_name}</td>
+            <td className="Column-2">
+              <p>
+                {mission.description}
+              </p>
+              {' '}
 
-        </td>
-        <td className="Column-3">
-          <div className="status">
-            Active
-          </div>
-        </td>
-        <td className="Column-4">
-          <div className="centered-content">
-            <input type="button" value="Mission" />
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>Row 1, Column 1</td>
-        <td className="Column-2">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-            obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-            tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
-            sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-            recusandae alias error harum maxime adipisci amet laborum. Perspiciatis
-          </p>
-          {' '}
-
-        </td>
-        <td className="Column-3">
-          <div className="status">
-            Active
-          </div>
-        </td>
-        <td className="Column-4">
-          <div className="centered-content">
-            <input type="button" value="Mission" />
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>Row-2, Column 1</td>
-        <td className="Column-2">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-            obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-            tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
-            sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-            recusandae alias error harum maxime adipisci amet laborum. Perspiciatis
-          </p>
-          {' '}
-
-        </td>
-        <td className="Column-3">
-          <div className="status">
-            Active
-          </div>
-        </td>
-        <td className="Column-4">
-          <div className="centered-content">
-            <input type="button" value="Mission" />
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>Row 1, Column 1</td>
-        <td className="Column-2">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-            obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-            tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
-            sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-            recusandae alias error harum maxime adipisci amet laborum. Perspiciatis
-          </p>
-          {' '}
-
-        </td>
-        <td className="Column-3">
-          <div className="status">
-            Active
-          </div>
-        </td>
-        <td className="Column-4">
-          <div className="centered-content">
-            <input type="button" value="Mission" />
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>Row-2, Column 1</td>
-        <td className="Column-2">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-            optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-            obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-            tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
-            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
-            sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam
-            recusandae alias error harum maxime adipisci amet laborum. Perspiciatis
-          </p>
-          {' '}
-
-        </td>
-        <td className="Column-3">
-          <div className="status">
-            Active
-          </div>
-        </td>
-        <td className="Column-4">
-          <div className="centered-content">
-            <input type="button" value="Mission" />
-          </div>
-        </td>
-      </tr>
-      {/* Add more rows as needed */}
-    </tbody>
-  </Table>
-);
+            </td>
+            <td className="Column-3">
+              <div className={mission.reserved ? 'status Active' : 'status'}>
+                Active
+              </div>
+            </td>
+            <td className="Column-4">
+              <div className="centered-content">
+                <input type="button" onClick={dispatch(changeStatus(mission.mission_id))} className={mission.reserved ? 'leave-mission' : ''} value="Mission" />
+              </div>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </Table>
+  );
+};
 
 export default Mission;
