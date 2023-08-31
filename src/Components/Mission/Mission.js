@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import './Mission.css';
 import { useDispatch, useSelector } from 'react-redux';
 import Table from 'react-bootstrap/Table';
-import { changeStatus, fetchMission } from './redux/mission/missionSlice';
+import { changeStatus, fetchMission } from '../../redux/mission/missionSlice';
 // import { fetchMission, changeStatus } from './redux/mission/missionSlice';
 // eslint-disable-next-line import/no-extraneous-dependencies
 // C:\Users\Danskids\Desktop\ALL MY PROJECTS\Space travellers(group-projectreact)
