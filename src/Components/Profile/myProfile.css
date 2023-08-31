@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  min-width: 100%;
+  margin: auto;
+}
+
+/* th,
+td {
+  height: 60px;
+} */
+
+.table-1 {
+  width: 48%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto auto auto;
+  align-self: flex-start;
+}
+
+.table-2 {
+  width: 48%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto auto auto;
+  align-self: flex-start;
+}
+
+.border {
+  border: 1px solid #ddd;
+}
+
+.header-cell {
+  border-top-color: white;
+}

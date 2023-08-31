@@ -32,8 +32,8 @@ h1 {
 }
 
 .Column-4 {
-  display: table-cell;
-  vertical-align: middle;
+  /* display: table-cell;
+  vertical-align: middle; */
   position: relative;
   min-height: 100%;
   flex: 1;
