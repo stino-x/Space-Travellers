@@ -135,7 +135,7 @@ To run tests, run the following command:
 
 👤 **Iheagwara Augustine**
 
-- GitHub: [@githubhandle](https://github.com/stino-x)
+- GitHub: [@stino-x](https://github.com/stino-x)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/augustine-iheagwara-644b11228/)
 
 ## 🔭 Future Features <a name="future-features"></a>
