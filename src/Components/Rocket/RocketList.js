@@ -1,5 +1,3 @@
-/* eslint-disable react/require-default-props */
-/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 import RocketItem from './RocketItem';
@@ -14,12 +12,14 @@ const RocketList = (props) => {
   );
 };
 
-RocketList.defaultProps = {
-  rockets: [],
-};
-
 RocketList.propTypes = {
-  rockets: PropTypes.arrayOf(PropTypes.object),
+  rockets: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
 };
 
 export default RocketList;

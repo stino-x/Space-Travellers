@@ -17,7 +17,6 @@ const RocketContainer = () => {
       saveReservedAPI = true;
       dispatch(fetchRocketsData());
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

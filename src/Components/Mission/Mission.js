@@ -1,6 +1,3 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable import/extensions */
 import React, { useEffect } from 'react';
 import './Mission.css';
 import { useDispatch, useSelector } from 'react-redux';
@@ -28,7 +25,6 @@ const Mission = () => {
           <th className="Column 1">Mission</th>
           <th className="Column-2">Description</th>
           <th className="Column 3">Status</th>
-          <th className="Column 4" />
         </tr>
       </thead>
       <tbody>
