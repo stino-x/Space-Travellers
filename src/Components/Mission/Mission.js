@@ -15,7 +15,7 @@ const Mission = () => {
   const missionLog = useSelector((state) => state.missions.missions);
 
   useEffect(() => {
-    //dispatch(fetchMission());
+    // dispatch(fetchMission());
     if (saveJoinedAPI === false) {
       saveJoinedAPI = true;
       dispatch(fetchMission());
