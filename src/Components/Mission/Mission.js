@@ -7,13 +7,19 @@ import { useDispatch, useSelector } from 'react-redux';
 import Table from 'react-bootstrap/Table';
 import { changeStatus, fetchMission } from '../../redux/mission/missionSlice';
 
+let saveJoinedAPI = false;
+
 const Mission = () => {
   const dispatch = useDispatch();
 
   const missionLog = useSelector((state) => state.missions.missions);
 
   useEffect(() => {
-    dispatch(fetchMission());
+    //dispatch(fetchMission());
+    if (saveJoinedAPI === false) {
+      saveJoinedAPI = true;
+      dispatch(fetchMission());
+    }
   }, []);
   return (
     <Table className="table" striped bordered hover variant="light">
